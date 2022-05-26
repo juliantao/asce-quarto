@@ -93,7 +93,8 @@ But it is not a great deal...
 ## Note:
 
 The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
-Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; a figure using embedded python code is also used to replace the original example figure.
+Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; 
+the figures are also updated, including one figure generated from embedded python code chunk. 
 
 ## Todo:
 
