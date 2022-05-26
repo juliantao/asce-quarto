@@ -47,6 +47,10 @@ To use this template, fork or click [`Use this template`](https://github.com/jul
   But since we defined the default prefix for cross-referencing sections as `Section`, 
   now it is rendered into an awkward format `Appendix Section I`. 
 
+**Note:**
+
+The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the overleaf template. 
+Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; a figure using embeded python code is also used to replace the original example figure.
 
 Todo:
 
