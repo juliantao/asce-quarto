@@ -157,7 +157,7 @@
 \date{}
 
 \begin{document}
-\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[enhanced, frame hidden, borderline west={3pt}{0pt}{shadecolor}, breakable, sharp corners, interior hidden, boxrule=0pt]}{\end{tcolorbox}}\fi
+\ifdefined\Shaded\renewenvironment{Shaded}{\begin{tcolorbox}[breakable, interior hidden, boxrule=0pt, frame hidden, borderline west={3pt}{0pt}{shadecolor}, enhanced, sharp corners]}{\end{tcolorbox}}\fi
 
 \title{Template for Preparing Your Submission to the American Society Of Civil Engineers (ASCE)}
 
@@ -197,10 +197,9 @@ Matthew R.~Kuhn.
 This template provides guidance on how to prepare your manuscript
 according to the ASCE requirements, including details on how to use
 various LaTeX commands to achieve the appropriate formatting. Additional
-template options are given in Appendix
-\protect\hyperlink{app:options}{9}. If you have any questions about this
-template, or need help with LaTeX, please
-\href{https://www.overleaf.com/contact}{contact Overleaf} who can
+template options are given in Appendix Section~\ref{sec-app-options}. If
+you have any questions about this template, or need help with LaTeX,
+please \href{https://www.overleaf.com/contact}{contact Overleaf} who can
 provide assistance as required.
 
 Once your work is complete, please use the ``Submit to ASCE'' option in
@@ -422,7 +421,7 @@ following symbols are used in this paper:}''; acronyms and abbreviations
 are not permitted in the Notation list except when they are used in
 equations as variables. Definitions should end with a semicolon. An
 example Notation list has been included in this template; see Appendix
-\protect\hyperlink{app:notation}{8}.
+Section~\ref{sec-app-notation}.
 
 \hypertarget{appendixes}{%
 \subsection{Appendixes}\label{appendixes}}
@@ -799,8 +798,10 @@ field ``\texttt{howpublished}'' is used to designate the medium in the
     howpublished = {CD-ROM},
 \end{verbatim}
 
-\hypertarget{app:notation}{%
-\section{Notation}\label{app:notation}}
+\appendix
+
+\hypertarget{sec-app-notation}{%
+\section{Notation}\label{sec-app-notation}}
 
 \emph{The following symbols are used in this paper:}
 
@@ -813,8 +814,8 @@ field ``\texttt{howpublished}'' is used to designate the medium in the
 \bottomrule()
 \end{longtable}
 
-\hypertarget{app:options}{%
-\section{LaTeX Template Options}\label{app:options}}
+\hypertarget{sec-app-options}{%
+\section{LaTeX Template Options}\label{sec-app-options}}
 
 The document class \texttt{ascelike-new.cls} provides several options
 given below. The

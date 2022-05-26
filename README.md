@@ -33,10 +33,26 @@ To use this template, fork or click [`Use this template`](https://github.com/jul
 \maketitle
 ```
 
+* Add a section title for the references
+
+```markdown
+# References
+
+::: {.refs}
+:::
+```
+
+* Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
+  When refereeing an appendix section, currently the prefix `Appendix` is written out.
+  But since we defined the default prefix for cross-referencing sections as `Section`, 
+  now it is rendered into an awkward format `Appendix Section I`. 
+
+
 Todo:
 
 - [ ] also ensure `html` format can be rendered with the title block
-- [ ] figure out the appendix numbering
+- [x] figure out the appendix numbering
+- [ ] figure out a better way to cross-reference appendices
 
   
 
