@@ -1,0 +1,32 @@
+project:
+  title: "asce-quarto"
+  output-dir: _output
+bibliography: ./assets/references.bib
+csl: ./assets/american-society-of-civil-engineers.csl
+link-citations: true
+crossref:
+  fig-prefix: Fig.
+  fig-title: "**Fig.**"
+  tbl-prefix: Table
+  tbl-title: "**Table**"
+  eq-prefix: Eq.
+  sec-prefix: Section
+  title-delim: "." 
+format:
+  pdf:
+    documentclass: ./assets/ascelike-new
+    classoption: [NewProceedings, letterpaper]
+    pdf-engine: pdflatex
+    indent: true
+    keep-tex: true
+    header-includes:
+      - \usepackage[labelfont=bf,labelsep=period]{caption}
+      - \usepackage{newtxtext,newtxmath}
+  html:
+    theme: cosmo
+    comments:
+      hypothesis: true
+execute:
+  echo: false
+
+
