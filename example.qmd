@@ -566,11 +566,11 @@ medium in the `.bib` file:
 
 *The following symbols are used in this paper:*
 
-  ------------------------ --------------------
-                       $D$ pile diameter (m);
-                       $R$ distance (m); and
-    $C_{\mathrm{Oh\;no!}}$ fudge factor.
-  ------------------------ --------------------
+|                          |                      |
+| ------------------------ | -------------------- |
+| $D$                      | pile diameter (m);   |
+| $R$                      | distance (m); and    |
+| $C_{\mathrm{Oh\;no!}}$   | fudge factor.        |
 
 # LaTeX Template Options {#sec-app-options}
 
