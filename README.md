@@ -49,7 +49,7 @@ To use this template, fork or click [`Use this template`](https://github.com/jul
 
 **Note:**
 
-The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the overleaf template. 
+The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
 Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; a figure using embeded python code is also used to replace the original example figure.
 
 Todo:
@@ -57,11 +57,3 @@ Todo:
 - [ ] also ensure `html` format can be rendered with the title block
 - [x] figure out the appendix numbering
 - [ ] figure out a better way to cross-reference appendices
-
-  
-
-
-
-
-
-  
