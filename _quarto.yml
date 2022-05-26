@@ -28,5 +28,6 @@ format:
       hypothesis: true
 execute:
   echo: false
+  warning: false
 
 

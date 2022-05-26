@@ -274,18 +274,19 @@ capitalize only the first letter of subsubsection headings.
 
 # Figures and Tables
 
-This template includes an example of a figure (@fig-fill-between) and a table
+This template includes two examples of figure (@fig-fill-between, @fig-asce-logo) and a table
 (@tbl-assembly). 
-The example figure has a caption with no more information than the figure itself, a very poor practice indeed. A reference here [@Stahl:2004a].
+@fig-fill-between is a computed figure with python. It has a caption with no more information than the figure itself, a very poor practice indeed. A reference here [@Stahl:2004a].
 
 ```{python}
 #| label: fig-fill-between
-#| fig-cap: "An example figure."
+#| fig-cap: An example figure.
+
 import matplotlib.pyplot as plt
 import numpy as np
 
 # use SciencePlots package
-# to install the lastest release (from PyPI)
+# to install the latest release (from PyPI)
 # pip install SciencePlots
 
 # to install the latest commit (from GitHub)
@@ -311,6 +312,8 @@ plt.show()
 
 ```
 
+@fig-asce-logo is a figure of `pdf` format.
+
 ## Figure Captions
 
 Figure captions should be short and to the point; they need not include
@@ -322,6 +325,12 @@ Figures should be uploaded as separate files in TIFF, EPS, or PDF
 format. If using PDF format, authors must ensure that all fonts are
 embedded before submission. Every figure must have a figure number and
 be cited sequentially in the text.
+
+::: {#fig-asce-logo}
+![](./img/asce-logo.pdf)
+
+ASCE logo with signature on one line 
+:::
 
 ## Color Figures
 
@@ -387,6 +396,7 @@ paying any fees associated with permission to publish any material. If
 the copyright holder requests a copy of the journal in which his or her
 figure is used, the corresponding author is responsible for obtaining a
 copy of the journal.
+
 
 # Supplemental Materials
 
@@ -630,7 +640,7 @@ important; the other options are largely incidental.
     default use (or absence) of line numbers in the `Journal`,
     `Proceedings`, and `NewProceedings` formats.
 
-# References
+# References {-}
 
 ::: {.refs}
 :::

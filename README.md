@@ -1,8 +1,8 @@
 This is a hackish [`quarto`](https://quarto.org/) template for ASCE publications based on the [`ascelike-new` class](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty).
 
-This template can be used before the official `rticle` like `quarto` template mechanism is released (see [here](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent), [here](https://github.com/quarto-dev/quarto-cli/issues/170), and [here](https://github.com/quarto-dev/quarto-cli/discussions/983#discussioncomment-2823436).
+This template can be used before the official `rticle` like `quarto` template mechanism is released (see [here](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent), [here](https://github.com/quarto-dev/quarto-cli/issues/170), and [here](https://github.com/quarto-dev/quarto-cli/discussions/983#discussioncomment-2823436)).
 
-To use this template, fork or click [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button and then do the following:
+To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. Then, do the following:
 
 * In the shared matadata `_quarto.yml`,
   * Set `classoption: [NewProceedings, letterpaper]` for conference paper
@@ -36,7 +36,7 @@ To use this template, fork or click [`Use this template`](https://github.com/jul
 * Add a section title for the references
 
 ```markdown
-# References
+# References {-}
 
 ::: {.refs}
 :::
@@ -47,13 +47,42 @@ To use this template, fork or click [`Use this template`](https://github.com/jul
   But since we defined the default prefix for cross-referencing sections as `Section`, 
   now it is rendered into an awkward format `Appendix Section I`. 
 
+## Structure and organization
+
+It is suggested to have a meaningful structure of the directory. 
+For example, this template has the following tree structure.
+The `data` and `code` directories are empty but should be updated for your paper.
+
+```
+.
+├── assets
+│   ├── american-society-of-civil-engineers.csl
+│   ├── ascelike-new.cls
+│   └── references.bib
+├── code
+├── data
+├── example-original.tex
+├── example.qmd
+├── example.tex
+├── img
+│   └── asce-logo.pdf
+├── LICENSE
+├── _output
+│   ├── example_files
+│   │   └── figure-pdf
+│   │       └── fig-fill-between-output-1.pdf
+│   └── example.pdf
+├── _quarto.yml
+└── README.md
+```
+
 **Note:**
 
 The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
-Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; a figure using embeded python code is also used to replace the original example figure.
+Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; a figure using embedded python code is also used to replace the original example figure.
 
 Todo:
 
 - [ ] also ensure `html` format can be rendered with the title block
-- [x] figure out the appendix numbering
+- [x] ~~figure out the numbering for appendix~~
 - [ ] figure out a better way to cross-reference appendices
