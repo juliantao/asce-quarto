@@ -84,7 +84,7 @@ The `data` and `code` directories are empty but should be updated for your paper
 
 ## Caveats
 
-* If you have an old `texlive` distribution, there may be a warming on option crash. Please update `texlive`.
+* If you have an old `texlive` distribution, there may be a warning on option crash. Please update `texlive`. It is also recommended that you use the latest version of [Quarto](https://quarto.org/docs/get-started/).
 * Alternatively, you can comment out the line `- \usepackage{newtxtext,newtxmath}` in `_quarto.yml`. 
 The `lmodern` fonts will be used, which will look different from the official template.
 But it is not a great deal...
@@ -93,11 +93,18 @@ But it is not a great deal...
 ## Note:
 
 The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
-Tweaks are made to the table format (I prefer to use the pipe style), cross-referencing following quarto syntax; 
-the figures are also updated, including one figure generated from embedded python code chunk. 
+The following tweaks are made.
+
+* Table is now prepared using the pipe style. 
+* Cross-referencing now follows the quarto syntax; 
+* A figure from an embedded python code is included;
+* Another `pdf` figure is included. 
+
+In addition, the original `ascelike-new.bst` file is not included since the citation style is now handled using a [`CSL` file](https://www.zotero.org/styles/american-society-of-civil-engineers?source=1).
+The styles related to citation in the `ascelike-new.cls` are also commented out.
 
 ## Todo:
 
-- [ ] also ensure `html` format can be rendered with the title block
 - [x] ~~figure out the numbering for appendix~~
+- [ ] also ensure `html` format can be rendered with the title block
 - [ ] figure out a better way to cross-reference appendices
