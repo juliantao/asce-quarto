@@ -22,7 +22,7 @@ To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clo
   * ONLY include the **first author** for the `author` field
   * set `format: pdf` for submission
 
-* Before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
+* Right after the `yaml` header and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
 
 ```latex
 \title{Template for Preparing Your Submission to the American Society Of Civil Engineers (ASCE)}
@@ -49,7 +49,7 @@ To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clo
 ```
 
 * Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
-  When refereeing an appendix section, currently the prefix `Appendix` is written out.
+  When referencing an appendix section, currently the prefix `Appendix` is written out.
   But since we defined the default prefix for cross-referencing sections as `Section`, 
   now it is rendered into an awkward format `Appendix Section I`. 
 
