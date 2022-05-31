@@ -56,9 +56,27 @@ In the shared matadata `_quarto.yml`,
   * Set `classoption: [Journal, letterpaper]` for journal paper
   * by default, the rendered files will be in the `_output` folder, change as you wish
 
+### Bibliography and references
+
+* Update the `references.bib` file in the `./assets/` directory
+
+* In the `yaml` header of the main `qmd` file, 
+  * **do not** include the **title** field
+  * ONLY include the **first author** for the `author` field
+  * set `format: pdf` for submission
+
+* Add a section title for the references at the end of the main `qmd` file
+
+```markdown
+# References {-}
+
+::: {.refs}
+:::
+```
+
 ### Title block
 
-* Right after the `yaml` header and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
+* Right after the `yaml` header in the main `qmd` and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
 
 ```latex
 \title{Template for Preparing Your Submission to the American Society Of Civil Engineers (ASCE)}
@@ -73,24 +91,6 @@ In the shared matadata `_quarto.yml`,
 \affil[2]{Third affiliation address}
 
 \maketitle
-```
-
-### Bibliography and references
-
-* Update the `references.bib` file in the `./assets/` directory
-
-* In the `yaml` header of the main `qmd` file, 
-  * **do not** include the **title** field
-  * ONLY include the **first author** for the `author` field
-  * set `format: pdf` for submission
-
-* Add a section title for the references
-
-```markdown
-# References {-}
-
-::: {.refs}
-:::
 ```
 
 ### Appendix
