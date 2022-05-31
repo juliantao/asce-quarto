@@ -57,9 +57,7 @@ Then, do the following:
 ```
 
 * Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
-  When referencing an appendix section, currently the prefix `Appendix` is written out.
-  But since we defined the default prefix for cross-referencing sections as `Section`, 
-  now it is rendered into an awkward format `Appendix Section I`. 
+  When referencing an appendix section, use syntax `Appendix [-@sec-label]`, this will be rendered to something like `Appendix I`.
 
 ## Structure and organization
 
@@ -114,5 +112,5 @@ The styles related to citation in the `ascelike-new.cls` are also commented out.
 ## Todo:
 
 - [x] ~~figure out the numbering for appendix~~
+- [x] figure out a better way to cross-reference appendices
 - [ ] also ensure `html` format can be rendered with the title block
-- [ ] figure out a better way to cross-reference appendices

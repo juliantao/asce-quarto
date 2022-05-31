@@ -39,7 +39,7 @@ R. Kuhn.
 This template provides guidance on how to prepare your manuscript
 according to the ASCE requirements, including details on how to use
 various LaTeX commands to achieve the appropriate formatting. Additional
-template options are given in Appendix @sec-app-options. If you
+template options are given in Appendix [-@sec-app-options]. If you
 have any questions about this template, or need help with LaTeX, please
 [contact Overleaf](https://www.overleaf.com/contact) who can provide
 assistance as required.
@@ -239,7 +239,7 @@ Notation lists should always begin with the phrase, "*The following
 symbols are used in this paper:*"; acronyms and abbreviations are not
 permitted in the Notation list except when they are used in equations as
 variables. Definitions should end with a semicolon. An example Notation
-list has been included in this template; see Appendix @sec-app-notation.
+list has been included in this template; see Appendix [-@sec-app-notation].
 
 ## Appendixes
 
