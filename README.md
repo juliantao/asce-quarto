@@ -1,14 +1,40 @@
 # asce-quarto
 
-## About
+## Table of Contents
+
+ * [About](#about)
+ * [Guide](#guide)
+    * [Fork and clone](#fork-and-clone)
+    * [Editing](#editing)
+       * [Publication type and other options](#publication-type-and-other-options)
+       * [Title block](#title-block)
+       * [Bibliography and references](#bibliography-and-references)
+       * [Appendix](#appendix)
+    * [Repo structure and organization](#repo-structure-and-organization)
+ * [Caveats](#caveats)
+ * [Todo](#todo)
+
+# About
 
 This is a hackish [`quarto`](https://quarto.org/) template for ASCE publications based on the [`ascelike-new` class](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty).
 
 This template can be used before the official `rticle`-like `quarto` template mechanism is released (see [here](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent), [here](https://github.com/quarto-dev/quarto-cli/issues/170), and [here](https://github.com/quarto-dev/quarto-cli/discussions/983#discussioncomment-2823436)).
 
-## Guide
+The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
+The following tweaks are made.
 
-### Fork and clone
+* Table is now prepared using the pipe style. 
+* Cross-referencing now follows the quarto syntax; 
+* A figure from an embedded python code is included;
+* Another `pdf` figure is included. 
+
+In addition, the original `ascelike-new.bst` file is not included since the citation style is now handled using a [`CSL` file](https://www.zotero.org/styles/american-society-of-civil-engineers?source=1).
+The styles related to citation in the `ascelike-new.cls` are also commented out.
+
+
+# Guide
+
+## Fork and clone
 
 To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. 
 
@@ -18,22 +44,21 @@ A more convenient way is to use [`github cli`](https://cli.github.com/)
 gh repo create "new-repo-name" --private --clone -p "https://github.com/juliantao/asce-quarto"
 ```
 
-This will: 
-  * `gh repo create "new-repo-name" creates a new github repo with the name `new-repo-name` 
+  * `gh repo create "new-repo-name"` creates a new github repo with the name `new-repo-name` 
   * `--private` makes the github repo private before submission
   * `--clone` clones the remote repo to a local repo in the current directory and links the two
   * `-p "https://github.com/juliantao/asce-quarto"` uses the `asce-quarto` repo as a template
 
-### Editing
+## Editing
 
-#### Publication type and other options
+### Publication type and other options
 
 In the shared matadata `_quarto.yml`,
   * Set `classoption: [NewProceedings, letterpaper]` for conference paper
   * Set `classoption: [Journal, letterpaper]` for journal paper
   * by default, the rendered files will be in the `_output` folder, change as you wish
 
-#### Title block
+### Title block
 
 * Right after the `yaml` header and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
 
@@ -52,7 +77,7 @@ In the shared matadata `_quarto.yml`,
 \maketitle
 ```
 
-#### Bibliography and references
+### Bibliography and references
 
 * Update the `references.bib` file in the `./assets/` directory
 
@@ -70,7 +95,7 @@ In the shared matadata `_quarto.yml`,
 :::
 ```
 
-#### Appendix
+### Appendix
 
 * Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
   When referencing an appendix section, use syntax `Appendix [-@sec-label]`, this will be rendered to something like `Appendix I`.
@@ -104,29 +129,15 @@ The `data` and `code` directories are empty but should be updated for your paper
 └── README.md
 ```
 
-## Caveats
+# Caveats
 
 * If you have an old `texlive` distribution, there may be a warning on option crash. Please update `texlive`. It is also recommended that you use the latest version of [Quarto](https://quarto.org/docs/get-started/).
 * Alternatively, you can comment out the line `- \usepackage{newtxtext,newtxmath}` in `_quarto.yml`. 
 The `lmodern` fonts will be used, which will look different from the official template.
 But it is not a great deal...
 
-
-## Note:
-
-The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
-The following tweaks are made.
-
-* Table is now prepared using the pipe style. 
-* Cross-referencing now follows the quarto syntax; 
-* A figure from an embedded python code is included;
-* Another `pdf` figure is included. 
-
-In addition, the original `ascelike-new.bst` file is not included since the citation style is now handled using a [`CSL` file](https://www.zotero.org/styles/american-society-of-civil-engineers?source=1).
-The styles related to citation in the `ascelike-new.cls` are also commented out.
-
-## Todo:
+# Todo
 
 - [x] ~~figure out the numbering for appendix~~
-- [x] figure out a better way to cross-reference appendices
+- [x] ~~figure out a better way to cross-reference appendices~~
 - [ ] also ensure `html` format can be rendered with the title block
