@@ -8,6 +8,8 @@ This template can be used before the official `rticle`-like `quarto` template me
 
 ## Guide
 
+### Fork and clone
+
 To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. 
 
 A more convenient way is to use [`github cli`](https://cli.github.com/)
@@ -16,19 +18,22 @@ A more convenient way is to use [`github cli`](https://cli.github.com/)
 gh repo create "new-repo-name" --private --clone -p "https://github.com/juliantao/asce-quarto"
 ```
 
-Then, do the following:
+This will: 
+  * `gh repo create "new-repo-name" creates a new github repo with the name `new-repo-name` 
+  * `--private` makes the github repo private before submission
+  * `--clone` clones the remote repo to a local repo in the current directory and links the two
+  * `-p "https://github.com/juliantao/asce-quarto"` uses the `asce-quarto` repo as a template
 
-* In the shared matadata `_quarto.yml`,
+### Editing
+
+#### Publication type and other options
+
+In the shared matadata `_quarto.yml`,
   * Set `classoption: [NewProceedings, letterpaper]` for conference paper
   * Set `classoption: [Journal, letterpaper]` for journal paper
   * by default, the rendered files will be in the `_output` folder, change as you wish
 
-* Update the `references.bib` file in the `./assets/` directory
-
-* In the `yaml` header of the main `qmd` file, 
-  * **do not** include the **title** field
-  * ONLY include the **first author** for the `author` field
-  * set `format: pdf` for submission
+#### Title block
 
 * Right after the `yaml` header and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
 
@@ -47,6 +52,15 @@ Then, do the following:
 \maketitle
 ```
 
+#### Bibliography and references
+
+* Update the `references.bib` file in the `./assets/` directory
+
+* In the `yaml` header of the main `qmd` file, 
+  * **do not** include the **title** field
+  * ONLY include the **first author** for the `author` field
+  * set `format: pdf` for submission
+
 * Add a section title for the references
 
 ```markdown
@@ -56,10 +70,12 @@ Then, do the following:
 :::
 ```
 
+#### Appendix
+
 * Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
   When referencing an appendix section, use syntax `Appendix [-@sec-label]`, this will be rendered to something like `Appendix I`.
 
-## Structure and organization
+## Repo structure and organization
 
 It is suggested to have a meaningful structure of the directory. 
 For example, this template has the following tree structure.
