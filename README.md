@@ -8,7 +8,15 @@ This template can be used before the official `rticle`-like `quarto` template me
 
 ## Guide
 
-To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. Then, do the following:
+To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. 
+
+A more convenient way is to use [`github cli`](https://cli.github.com/)
+
+```bash
+gh repo create "new-repo-name" --private --clone -p "https://github.com/juliantao/asce-quarto"
+```
+
+Then, do the following:
 
 * In the shared matadata `_quarto.yml`,
   * Set `classoption: [NewProceedings, letterpaper]` for conference paper
