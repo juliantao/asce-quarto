@@ -276,7 +276,9 @@ capitalize only the first letter of subsubsection headings.
 
 This template includes two examples of figure (@fig-fill-between, @fig-asce-logo) and a table
 (@tbl-assembly). 
-@fig-fill-between is a computed figure with python. It has a caption with no more information than the figure itself, a very poor practice indeed. A reference here [@Stahl:2004a].
+@fig-fill-between is a computed figure with python. 
+It has a caption with no more information than the figure itself, a very poor practice indeed.
+A reference here [@Stahl:2004a].
 
 ```{python}
 #| label: fig-fill-between
