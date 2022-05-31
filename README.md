@@ -18,23 +18,21 @@
 
 This is a hackish [`quarto`](https://quarto.org/) template for ASCE publications based on the [`ascelike-new` class](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty).
 
-This template can be used before the official `rticle`-like `quarto` template mechanism is released (see [here](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent), [here](https://github.com/quarto-dev/quarto-cli/issues/170), and [here](https://github.com/quarto-dev/quarto-cli/discussions/983#discussioncomment-2823436)).
+This template is intended to be used before the official `rticle`-like `quarto` template mechanism is released (see [here](https://quarto.org/docs/faq/rmarkdown.html#i-use-x-bookdown-blogdown-etc..-what-is-the-quarto-equivalent), [here](https://github.com/quarto-dev/quarto-cli/issues/170), and [here](https://github.com/quarto-dev/quarto-cli/discussions/983#discussioncomment-2823436)).
 
 The majority of the `qmd` file was directly converted from `ascexmpl-new.tex` from the [overleaf template](https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-the-american-society-of-civil-engineers-asce/pbwcqsvndpty) using [`pandoc`](https://pandoc.org/). 
-The following tweaks are made.
+The following tweaks are made:
 
-* Table is now prepared using the pipe style. 
+* The tables are now prepared using the pipe style;
 * Cross-referencing now follows the quarto syntax; 
 * A figure from an embedded python code is included;
-* Another `pdf` figure is included. 
-
-In addition, the original `ascelike-new.bst` file is not included since the citation style is now handled using a [`CSL` file](https://www.zotero.org/styles/american-society-of-civil-engineers?source=1).
-The styles related to citation in the `ascelike-new.cls` are also commented out.
-
+* An `pdf` figure is used to replace the original figure placeholder;
+* The original `ascelike-new.bst` file is not included since the citation style is now handled using a [`CSL` file](https://www.zotero.org/styles/american-society-of-civil-engineers?source=1);
+* The styles related to citation in the `ascelike-new.cls` are also commented out.
 
 # Guide
 
-## Fork and clone
+## Making a copy
 
 To use this template, [fork](https://github.com/juliantao/asce-quarto/fork), clone or click the [`Use this template`](https://github.com/juliantao/asce-quarto/generate) button. 
 
