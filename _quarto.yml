@@ -15,6 +15,10 @@ crossref:
 format:
   pdf:
     documentclass: ./assets/ascelike-new
+    # available class options include: Proceedings, NewProceedings
+    # Journal, BackFigs, InsideFigs, SingleSpace, DoubleSpace, 
+    # 10pt, 11pt, 11pt, NoPageNumbers, SectionNumbers, 
+    # NoLineNumbers, LineNumbers
     classoption: [NewProceedings, letterpaper]
     pdf-engine: pdflatex
     indent: true
