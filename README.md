@@ -8,8 +8,8 @@
     * [Editing](#editing)
        * [Publication type and other options](#publication-type-and-other-options)
        * [Title block](#title-block)
-       * [Bibliography and references](#bibliography-and-references)
        * [Appendix](#appendix)
+       * [Bibliography and references](#bibliography-and-references)
     * [Repo structure and organization](#repo-structure-and-organization)
  * [Caveats](#caveats)
  * [Todo](#todo)
@@ -56,25 +56,11 @@ In the shared matadata `_quarto.yml`,
   * Set `classoption: [Journal, letterpaper]` for journal paper
   * by default, the rendered files will be in the `_output` folder, change as you wish
 
-### Bibliography and references
-
-* Update the `references.bib` file in the `./assets/` directory
+### Title block
 
 * In the `yaml` header of the main `qmd` file, 
   * **do not** include the **title** field
   * ONLY include the **first author** for the `author` field
-  * set `format: pdf` for submission
-
-* Add a section title for the references at the end of the main `qmd` file
-
-```markdown
-# References {-}
-
-::: {.refs}
-:::
-```
-
-### Title block
 
 * Right after the `yaml` header in the main `qmd` and before the `# Abstract` section, include the remaining parts of the `title` block using raw `LaTex`:
 
@@ -97,6 +83,19 @@ In the shared matadata `_quarto.yml`,
 
 * Add `\appendix` before the appendix sections so that the section titles can be properly rendered. 
   When referencing an appendix section, use syntax `Appendix [-@sec-label]`, this will be rendered to something like `Appendix I`.
+
+### Bibliography and references
+
+* Update the `references.bib` file in the `./assets/` directory
+
+* Add a section title for the references at the end of the main `qmd` file
+
+```markdown
+# References {-}
+
+::: {.refs}
+:::
+```
 
 ## Repo structure and organization
 
