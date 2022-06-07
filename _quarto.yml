@@ -4,16 +4,16 @@ project:
 bibliography: ./assets/references.bib
 csl: ./assets/american-society-of-civil-engineers.csl
 link-citations: true
-crossref:
-  fig-prefix: Fig.
-  fig-title: "**Fig.**"
-  tbl-prefix: Table
-  tbl-title: "**Table**"
-  eq-prefix: Eq.
-  sec-prefix: Section
-  title-delim: "." 
 format:
   pdf:
+    crossref:
+      fig-prefix: Fig.
+      fig-title: "**Fig.**"
+      tbl-prefix: Table
+      tbl-title: "**Table**"
+      eq-prefix: Eq.
+      sec-prefix: Section
+      title-delim: "." 
     documentclass: ./assets/ascelike-new
     # available class options include: Proceedings, NewProceedings
     # Journal, BackFigs, InsideFigs, SingleSpace, DoubleSpace, 
@@ -31,6 +31,17 @@ format:
     comments:
       hypothesis: true
   docx:
+    crossref:
+      fig-prefix: Figure
+      fig-title: "**Figure**"
+      tbl-prefix: Table
+      tbl-title: "**Table**"
+      eq-prefix: Eq.
+      sec-prefix: Section
+      title-delim: "." 
+    filters:
+      - ./assets/scholarly-metadata.lua
+      - ./assets/author-info-blocks.lua
     reference-doc: ./assets/asce-template.docx
 execute:
   echo: false

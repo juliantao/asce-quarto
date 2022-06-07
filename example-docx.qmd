@@ -1,18 +1,17 @@
 ---
-author: Author One
-format: pdf
+title: Template for Preparing Your Submission to the American Society Of Civil Engineers (ASCE)
+author:
+  - Author One:
+      institute: 
+        - "First affiliation address, with corresponding author email. Email: <author.one@email.com>"
+  - Author Two:
+      institute: 
+        - "Second affiliation address"
+  - Author Three:
+      institute: 
+        - "Third affiliation address"
+format: docx
 ---
-
-\title{Template for Preparing Your Submission to the American Society Of Civil Engineers (ASCE)}
-
-\author[2]{Author Two}
-\author[3]{Author Three}
-
-\affil[1]{First affiliation address, with corresponding author email. Email: author.one@email.com}
-\affil[2]{Second affiliation address}
-\affil[2]{Third affiliation address}
-
-\maketitle
 
 # Abstract
 
