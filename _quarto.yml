@@ -30,6 +30,8 @@ format:
     theme: cosmo
     comments:
       hypothesis: true
+  docx:
+    reference-doc: ./assets/asce-template.docx
 execute:
   echo: false
   warning: false
