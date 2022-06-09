@@ -128,6 +128,10 @@ The `data` and `code` directories are empty but should be updated for your paper
 
 # Caveats
 
+* This template works only for `pdf` and `tex` format now. 
+Although a word template file is also provided, the rendered docx file is not ideal.
+Currently, the best way to generate a `docx` file with comparable layout is using Acrobat DC from Adobe to convert the generated pdf file directly to docx file.
+
 * If you have an old `texlive` distribution, there may be a warning on option crash. Please update `texlive`. It is also recommended that you use the latest version of [Quarto](https://quarto.org/docs/get-started/).
 * Alternatively, you can comment out the line `- \usepackage{newtxtext,newtxmath}` in `_quarto.yml`. 
 The `lmodern` fonts will be used, which will look different from the official template.
@@ -138,3 +142,4 @@ But it is not a great deal...
 - [x] ~~figure out the numbering for appendix~~
 - [x] ~~figure out a better way to cross-reference appendices~~
 - [ ] also ensure `html` format can be rendered with the title block
+- [ ] improve `docx` output format
